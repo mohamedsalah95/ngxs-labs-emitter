@@ -1,0 +1,7 @@
+ <ng-container *ngIf="count$ | async as count">
+  <h3>Count is {{ count.value }}</h3>
+  <div>
+    <button (click)="onClick(+1)">Increment (+1)</button>
+    <button (click)="onClick(-1)">Decrement (-1)</button>
+  </div>
+</ng-container>  
